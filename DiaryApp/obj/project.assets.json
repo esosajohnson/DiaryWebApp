@@ -4711,23 +4711,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Acer\\.nuget\\packages\\": {},
+    "C:\\Users\\esosa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\DiaryWebApp\\DiaryApp\\DiaryApp.csproj",
+      "projectUniqueName": "C:\\Users\\esosa\\Source\\Repos\\DiaryWebApp\\DiaryApp\\DiaryApp.csproj",
       "projectName": "DiaryApp",
-      "projectPath": "C:\\Users\\Acer\\source\\repos\\DiaryWebApp\\DiaryApp\\DiaryApp.csproj",
-      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer\\source\\repos\\DiaryWebApp\\DiaryApp\\obj\\",
+      "projectPath": "C:\\Users\\esosa\\Source\\Repos\\DiaryWebApp\\DiaryApp\\DiaryApp.csproj",
+      "packagesPath": "C:\\Users\\esosa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\esosa\\Source\\Repos\\DiaryWebApp\\DiaryApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\esosa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4755,7 +4755,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -4795,7 +4795,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.106/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

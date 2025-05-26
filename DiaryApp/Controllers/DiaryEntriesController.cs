@@ -71,5 +71,32 @@ namespace DiaryApp.Controllers
             }
             return View(obj);
         }
+
+        [HttpGet]
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            DiaryEntry? diaryEntry = _db.DiaryEntries.Find(id);
+            if (diaryEntry == null)
+            {
+                return NotFound();
+            }
+            return View(diaryEntry);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(DiaryEntry obj)
+        {
+            if (obj != null)
+            {
+                _db.DiaryEntries.Remove(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+        }
     }
 }

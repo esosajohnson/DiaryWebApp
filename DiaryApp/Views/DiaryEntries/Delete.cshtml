@@ -1,0 +1,41 @@
+﻿@model DiaryEntry
+
+<div class="container mt-4">
+	<div class="row">
+		<div class="col-md-8 offset-md-2">
+			<div class="card">
+				<div class="card-header bg-primary text-white">
+					<h2>Delete Diary Entry</h2>
+				</div>
+				<div class="card-body">
+					<form asp-action="Delete" method="post">
+						<div asp-validation-summary="All" class="text-danger"></div>
+						<div class="form-group mb-3">
+							<label asp-for="Title" class="form-label">Title</label>
+							<input asp-for="Title" class="form-control" placeholder="Enter a title" />
+							<span asp-validation-for="Title" class="text-danger"></span>
+						</div>
+						<div class="form-group mb-3">
+							<label asp-for="Description" class="form-label">Description</label>
+							<input asp-for="Description" row:"5" class="form-control" placeholder="Enter the activities you did that day" />
+							<span asp-validation-for="Description" class="text-danger"></span>
+						</div>
+						<div class="form-group mb-3">
+							<label asp-for="CreatedAt" class="form-label">Created At</label>
+							<input asp-for="CreatedAt" type="date" class="form-control" />
+							<span asp-validation-for="CreatedAt" class="text-danger"> </span>
+						</div>
+						<div class="d-flex justify-content-between">
+							<button type="submit" class="btn btn-danger">Delete</button>
+							<a class="btn btn-secondary" asp-action="Index">Cancel</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

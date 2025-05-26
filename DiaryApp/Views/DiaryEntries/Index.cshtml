@@ -30,7 +30,14 @@
 					<td>@entry.Title</td>
 					<td>@entry.Description</td>
 					<td>@entry.CreatedAt.ToString("g")</td>
-					<td>Edit and Delete</td>
+					<td>
+						<a asp-controller="DiaryEntries" asp-action="" class="btn btn-primary btn-sm">
+							Edit
+						</a>
+						<a asp-controller="DiaryEntries" asp-action="" class="btn btn-danger btn-sm">
+							Delete
+						</a>
+					</td>
 					
 				</tr>
 			}
